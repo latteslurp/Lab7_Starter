@@ -33,7 +33,7 @@ window.addEventListener('DOMContentLoaded', init);
 
 // Initialize function, begins all of the JS code in this file
 async function init() {
-  initializeServiceWorker();
+  // initializeServiceWorker();
 
   try {
     await fetchRecipes();
@@ -52,23 +52,23 @@ async function init() {
  * Detects if there's a service worker, then loads it and begins the process
  * of installing it and getting it running
  */
-function initializeServiceWorker() {
-  /**
-   *  TODO - Part 2 Step 1
-   *  Initialize the service worker set up in sw.js
-   */
-  if ('serviceWorker' in navigator) {
-    window.addEventListener('load', function() {
-      navigator.serviceWorker.register('sw.js').then(function(registration) {
-        // Registration was successful
-        console.log('ServiceWorker registration successful with scope: ', registration.scope);
-      }, function(err) {
-        // registration failed :(
-        console.log('ServiceWorker registration failed: ', err);
-      });
-    });
-  }
-}
+// function initializeServiceWorker() {
+//   /**
+//    *  TODO - Part 2 Step 1
+//    *  Initialize the service worker set up in sw.js
+//    */
+//   if ('serviceWorker' in navigator) {
+//     window.addEventListener('load', function() {
+//       navigator.serviceWorker.register('sw.js').then(function(registration) {
+//         // Registration was successful
+//         console.log('ServiceWorker registration successful with scope: ', registration.scope);
+//       }, function(err) {
+//         // registration failed :(
+//         console.log('ServiceWorker registration failed: ', err);
+//       });
+//     });
+//   }
+// }
 
 /**
  * Loading JSON into a JS file is oddly not super straightforward (for now), so
