@@ -2,7 +2,7 @@
 //         so do not move it next to the other scripts
 
 const CACHE_NAME = 'lab-7-starter';
-const urlsToCache = [
+const urlsToCache = ['/',
   '/assets/scripts/main.js',
   '/assets/scripts/Router.js',
 ];
